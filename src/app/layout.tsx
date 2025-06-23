@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ausrum Parlor",
-  description: "A beauty parlor website",
-  // icons: {
-  //   icon: ["/assets/favicon.ico?v=4"], //Logo to be added later
-  // },
+  title: {
+    default: "Nikhaar",
+    template: "%s - Nikhaar",
+  },
+  description: "A beauty parlor app for managing appointments and services",
 };
 
 export default function RootLayout({
