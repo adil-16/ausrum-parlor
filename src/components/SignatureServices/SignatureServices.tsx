@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image"; // Recommended for optimizing images in Next.js
 import hairStylingImagePlaceholder from "../../assets/sig.avif";
+import Link from "next/link";
 
 const SignatureServices = () => {
   return (
@@ -56,9 +57,11 @@ const SignatureServices = () => {
             </div>
           </div>
           <div className="flex justify-end w-full">
-            <button className="mt-3 bg-[#B69951]  text-white poppins-medium py-3 px-16 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
-              Explore
-            </button>
+            <Link href="/services">
+              <button className="mt-3 bg-[#B69951]  text-white poppins-medium py-3 px-16 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
