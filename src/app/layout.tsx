@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
+import Footer from "@/components/Footer/footer";
+import Navbar from "@/components/Navbar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,18 +23,17 @@ export const metadata: Metadata = {
   // },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
 }
+

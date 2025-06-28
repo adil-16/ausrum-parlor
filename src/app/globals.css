@@ -1,1 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-Thin.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-UltraLight.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-Light.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-Regular.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-SemiBold.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-Bold.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-Heavy.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("https://raw.githubusercontent.com/google/fonts/master/ofl/aileron/Aileron-Black.otf")
+    format("opentype"); /* Placeholder URL: Replace with your actual font file path */
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Milker";
+  src: url(../assets/fonts/milker.regular.otf) format("opentype");
+  /* font-style: regular; */
+}
+.milker {
+  font-family: "Milker", "Poppins";
+}
+@font-face {
+  font-family: "Gafiya";
+  src: url(../assets/fonts/Gafiya-Regular.otf);
+  /* font-style: regular; */
+}
+.gafiya {
+  font-family: "Gafiya", "Poppins";
+}
+@font-face {
+  font-family: "PlayfairBold";
+  src: url(../assets/fonts/PlayfairDisplay-Bold.ttf);
+  /* font-style: regular; */
+}
+.play-bold {
+  font-family: "PlayfairBold";
+}
+@font-face {
+  font-family: "PlayfairRegular";
+  src: url(../assets/fonts/PlayfairDisplay-Regular.ttf);
+  /* font-style: regular; */
+}
+.play-regular {
+  font-family: "PlayfairRegular";
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.dynamicBorder {
+  border-width: 6px;
+  background-color: #b69951da;
+  border-color: #b69951da;
+  border-style: solid;
+  border-radius: 30% 70% 70% 30% / 30% 44% 56% 70%;
+  animation: morph 8s infinite ease-in-out;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 80s linear infinite;
+}
+
+/* Keyframes to morph border-radius over time */
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 44% 56% 70%;
+  }
+  25% {
+    border-radius: 60% 40% 30% 70% / 50% 50% 60% 40%;
+  }
+  50% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  75% {
+    border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 44% 56% 70%;
+  }
+}
+
+.inShadow {
+  box-shadow: 1px -120px 208px -22px rgba(61, 61, 61, 1) inset;
+  -webkit-box-shadow: 1px -120px 208px -22px rgba(61, 61, 61, 1) inset;
+  -moz-box-shadow: 1px -120px 208px -22px rgba(61, 61, 61, 1) inset;
+}
+
+/* slider.css */
+.slider-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.home-bg {
+  background-image: url(../assets/bg2.avif);
+  background-position: center;
+  background-size: cover;
+}
+.call-bg {
+  background-image: url(../assets/lending.avif);
+  background-position: center;
+  background-size: cover;
+}
