@@ -1,4 +1,3 @@
-
 // import Navbar from "@/components/Navbar/Navbar";
 import OurLocation from "@/components/OurLocation/OurLocation";
 import top from "../assets/top.png";
@@ -32,9 +31,11 @@ const App = () => {
                     Explore Services
                   </button>
                 </Link>
-                <button className="mt-8 border-[#B69951] text-xs sm:text-sm md:text-base border-2 text-[#B69951] hover:bg-[#B69951] hover:text-white poppins-medium py-3 px-5 md:px-8 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
-                  Book Us Now
-                </button>
+                <Link href="/appointment">
+                  <button className="mt-8 border-[#B69951] text-xs sm:text-sm md:text-base border-2 text-[#B69951] hover:bg-[#B69951] hover:text-white poppins-medium py-3 px-5 md:px-8 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                    Book Us Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -84,9 +85,11 @@ const App = () => {
           <p className="text-base md:text-xl text-[#ffffff] mb-8 z-100 play-bold">
             Book your appointment today and let us transform you.
           </p>
+          <Link href="/appointment">
           <button className="bg-[#B69951] z-100  text-white play-bold py-3 px-8 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
             Book an Appointment
           </button>
+          </Link>
         </section>
 
         {/* Our Location Section */}

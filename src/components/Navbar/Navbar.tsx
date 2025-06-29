@@ -79,9 +79,11 @@ export default function Navbar() {
         {/* Right Section: Button */}
         <div className="flex-shrink-0">
           <ul className="flex space-x-6 items-center">
-            <button className="bg-[#B69951] hover:bg-[#B69951] text-sm md:text-base text-white poppins-medium py-2 px-4 md:px-8 rounded-full shadow-lg transition duration-300 ease-in-out">
-              Book Now
-            </button>
+            <Link href="/appointment">
+              <button className="bg-[#B69951] hover:bg-[#B69951] text-sm md:text-base text-white poppins-medium py-2 px-4 md:px-8 rounded-full shadow-lg transition duration-300 ease-in-out">
+                Book Now
+              </button>
+            </Link>
           </ul>
         </div>
       </div>

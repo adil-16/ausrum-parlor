@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
-import Footer from "@/components/Footer/footer";
-import Navbar from "@/components/Navbar/Navbar";
+import ClientLayout from "./client-layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,9 +17,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ausrum Parlor",
   description: "A beauty parlor website",
-  // icons: {
-  //   icon: ["/assets/favicon.ico?v=4"], //Logo to be added later
-  // },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -28,12 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Suspense fallback={<div>Loading...</div>}>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <ClientLayout>{children}</ClientLayout>
         </Suspense>
       </body>
     </html>
   );
 }
-

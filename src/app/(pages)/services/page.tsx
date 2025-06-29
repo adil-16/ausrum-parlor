@@ -154,6 +154,7 @@ export default function ServicesPage() {
       {getFilteredServices().length > 6 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-15 gap-y-10">
           {getFilteredServices().map((item, idx) => (
+            
             <div
               key={idx}
               className="flex flex-col justify-between items-start sm:items-baseline gap-2"
