@@ -65,21 +65,21 @@ const Appointment: React.FC = () => {
     <section className="relative min-h-screen call-bg">
       <div className="absolute inset-0 bg-[#000000a8] bg-opacity-80 z-10" />
 
-      <div className="relative z-10 flex items-center justify-center min-h-screen ">
+      <div className="relative z-10 flex items-center justify-center min-h-screen pt-12 pb-12 ">
         <div className="container max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-4">
             {/* Booking Form */}
-            <div className="max-w-full md:w-lg">
+            <div className="w-full max-w-full   lg:w-lg">
               <div className="bg-[#b69951c0] p-6 md:p-10 rounded-lg shadow-lg text-black">
                 <form className="space-y-4">
-                  <h1 className="text-2xl gafiya uppercase text-white">
+                  <h1 className="text-xl lg:text-2xl gafiya uppercase text-white">
                     Book your slot
                   </h1>
 
                   {/* Name & Email (inline) */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label className="block play-regular text-xl mb-1 text-white">
+                      <label className="block play-regular text-base md:text-xl mb-1 text-white">
                         Name
                       </label>
                       <input
@@ -89,7 +89,7 @@ const Appointment: React.FC = () => {
                       />
                     </div>
                     <div>
-                      <label className="block play-regular text-xl mb-1 text-white">
+                      <label className="block play-regular text-base md:text-xl mb-1 text-white">
                         Email
                       </label>
                       <input
@@ -101,9 +101,9 @@ const Appointment: React.FC = () => {
                   </div>
 
                   {/* Phone & Service (inline) */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label className="block play-regular text-xl mb-1 text-white">
+                      <label className="block play-regular text-base md:text-xl mb-1 text-white">
                         Phone
                       </label>
                       <input
@@ -113,7 +113,7 @@ const Appointment: React.FC = () => {
                       />
                     </div>
                     <div>
-                      <label className="block play-regular text-xl mb-1 text-white">
+                      <label className="block play-regular text-base md:text-xl mb-1 text-white">
                         Select Service
                       </label>
                       <Select
@@ -129,7 +129,7 @@ const Appointment: React.FC = () => {
 
                   {/* Time Dropdown */}
                   <div>
-                    <label className="block play-regular text-xl mb-1 text-white">
+                      <label className="block play-regular text-base md:text-xl mb-1 text-white">
                       Select Time
                     </label>
                     <Select
@@ -172,7 +172,7 @@ const Appointment: React.FC = () => {
                   {/* Submit */}
                   <button
                     type="submit"
-                    className="w-full bg-white hover:opacity-90 text-[#B69951] play-bold px-6 py-4 rounded-4xl mt-8"
+                    className="w-full bg-white text-sm md:text-base hover:opacity-90 text-[#B69951] play-bold px-6 py-3 lg:py-4 rounded-4xl mt-4 lg:mt-8"
                   >
                     Book Appointment
                   </button>
@@ -181,11 +181,11 @@ const Appointment: React.FC = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="w-full md:w-1/2 text-white space-y-4 max-w-xl">
-              <h1 className="text-4xl gafiya uppercase">
+            <div className="w-full lg:w-1/2 text-white space-y-4 max-w-xl text-center lg:text-left">
+              <h1 className="text-2xl lg:text-4xl gafiya uppercase ">
                 Make your reservation
               </h1>
-              <p className="text-white/80">
+              <p className="text-sm lg:text-base text-white/80">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 facere, soluta magnam molestias itaque ad sint fugit architecto
                 incidunt iste culpa perspiciatis possimus.
