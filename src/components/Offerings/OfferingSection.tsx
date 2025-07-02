@@ -51,7 +51,7 @@ const OfferingsSection: React.FC = () => {
   return (
     <section className="bg-white w-full py-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl gafiya text-[#B69951] text-center mb-10">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl gafiya text-[#B69951] text-center mb-14">
           Our Offerings
         </h2>
 
