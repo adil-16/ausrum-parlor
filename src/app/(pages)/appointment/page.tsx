@@ -1,6 +1,12 @@
 import React from "react";
 import FormWrapper from "../../../components/FormWrapper/FormWrapper"; // ← Used directly now since it's a client component
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Appointment",
+}
+
 export default function AppointmentPage() {
   return (
     <section className="relative min-h-screen call-bg">

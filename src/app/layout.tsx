@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ausrum Parlor",
-  description: "A beauty parlor website",
+  title: {
+    default: "Nikhaar",
+    template: "%s - Nikhaar",
+  },
+  description: "A beauty parlor app for managing appointments and services",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
