@@ -15,7 +15,8 @@ const App = () => {
       <main className=" ">
         <KeyFeaturesSection />
         <HeroSection />
-        <OfferingsSection /
+        <OfferingsSection />
+
         {/* <div className="overflow-hidden whitespace-nowrap py-8  text-white bg-[#B69951] text-4xl relative mb-12">
           <div className="inline-block animate-marquee gafiya px-4 break-words">
             <span className="mx-12">
